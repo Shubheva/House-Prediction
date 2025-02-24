@@ -52,11 +52,14 @@ Also, before executing the files please make sure to navigate to the respective 
 Command: cd House_Prediction
 
 ### Step 5: Steps to run the codes.
-python model.py  
+#### python model.py  
+
 Example output:  
 Index(['Price', 'Size', 'Bedrooms', 'Bathrooms', 'Location'], dtype='object')
-Model trained successfully and saved as 'savedmodel.pkl'
-python app.py  
+Model trained successfully and saved as 'savedmodel.pkl'  
+
+#### python app.py  
+
 Example output:  
 * Serving Flask app 'app'
 * Debug mode: on
