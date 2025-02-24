@@ -14,9 +14,17 @@ To improve the predictions we can use more complex models like KNN algorithm, De
 Here For programming I have considered 4 features which are size of the house, number of bedrooms, number of bathrooms and location.
 Except Location every thing is numerical data, so linear regression model can be applied directly. In case of location, one-hot encoding has been used. It is the method which converts categorical data to mathematical data.
 
-## Implementation Steps:
+## Implementation  
+This code performs the flask application to predict the prices of house. There are two main functionalities which are coded in app.py and model.py.
+app.py: In this file, the house form is rendered. The user inputs are taken, and the categorical values are converted in to numeric with the help of one-hot encoding. App.py uses the saved model and after applying the model it render backs the result form. Here we are using POST method as the inputs are taken from user itself.
 
-### Step 1: Clone the Github repository
+model.py: This is nothing but our linear regression model. It starts with loading the dataset. X coordinate is considered for the features and Y for the target or predicted price. It splits the data in to two which is training dataset and testing dataset. Training data is used for training the model and testing data is used for testing the model. In this program we use 50 percent of the data for testing purpose. After training the data, the trained model is saved in Savedpackage.pkl
+
+## Steps to perform the code:
+
+### Step 1: Clone the Github repository  
+
+https://github.com/Shubheva/House-Prediction.git
 
 ### Step 2: Download the required Libraries
 1. Numpy
