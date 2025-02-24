@@ -1,0 +1,71 @@
+body{
+    display: flex;
+    background: linear-gradient(to bottom, #537895, #09203f);
+    height: 110vh;
+    margin: 15px;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 50px;
+    color: #e9efdc;
+}
+
+.heading1 {
+    margin-top: 100px;
+    margin-left: 200px;
+    animation: slideDown 2s ease;  /* Apply animation */
+}
+
+
+/* Slide-Down Animation */
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px); /* Start position (above) */
+        opacity: 0;                   /* Invisible */
+    }
+    to {
+        transform: translateY(0);     /* End position (normal) */
+        opacity: 1;                   /* Fully visible */
+    }
+}
+
+.heading2{
+margin-top: 200px;
+margin-left: -560px; 
+animation: slideDown1 2s ease;
+}
+
+@keyframes slideDown1 {
+    from {
+        transform: translateY(-100px); /* Start position (above) */
+        opacity: 0;                   /* Invisible */
+    }
+    to {
+        transform: translateY(0);     /* End position (normal) */
+        opacity: 1;                   /* Fully visible */
+    }
+}
+
+button {
+    width: 400px;
+    height: 75px;
+    padding-left: 15px;
+    align-items: center;
+    background-color: rgb(47, 75, 196);
+    border: 5px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: transform 0.3s ease;
+    background: 0.5s;
+    margin-top: 300px;
+    margin-left: -800px;
+
+}
+
+button:hover {
+    background: linear-gradient(to right, #b9722a, #ff6a00);
+    transform: scale(1.05); /* Slight zoom on hover */
+}
