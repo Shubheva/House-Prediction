@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>
+            House Prediction Form
+        </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">  <!--Linking of style sheet-->
+    </head>
+
+    <body>
+        <h1 class = "heading">House Cost Prediction Form</h1><br><br>
+        <form action="/predict" method="POST">
+            <!--Input-->
+            <label for="">First Name: </label>
+            <input type = "text" id = "first_name" name = first_name placeholder="Enter First Name" required><br><br>
+
+            <label for="">Last Name: </label>
+            <input type = "text" id = "last_name" name = last_name placeholder="Enter Last Name" required><br><br>
+
+            <label for="">Email ID: </label>
+            <input type = "email" id = "email" name = email placeholder="Enter Email ID" required><br><br>
+
+            <label for="">Contact Number: </label>
+            <input type ="numeric" id = "contact" pattern = "[0-9]{10}" placeholder="Enter Contact number" required><br><br>
+
+            <label for="">Number of Bedrooms: </label>
+            <input type = "number" id = "Bedrooms" name = "bedrooms" placeholder = "Number of Bedooms" min="0" required><br><br>
+
+            <label for="">Number of Bathrooms: </label>
+            <input type = "number" id = "Bathrooms" name = "bathrooms" placeholder = "Number of Bathooms" min="0" required><br><br>
+
+            <label for="">Size of house: </label>
+            <input type = "text" name = "Size" placeholder="Enter Size in Sqft" required><br><br>
+
+            <label for="">Preffered Location for House: </label>
+            <!---<input type = "text" name = 'Location' placeholder="Enter Location"><br><br>>--->
+            <select name = "Location" id = "Location" required>
+                <option value=""disabled selected> Select Location </option>
+                <option value="Pune"> Pune </option>
+                <option value="Mumbai"> Mumbai </option>
+                <option value="Delhi"> Delhi </option>
+                <option value="Kolkata"> Kolkata </option>
+                <option value="Surat"> Surat </option>
+                <option value="Other">Other </option>
+            </select>
+            <br><br>
+
+            <button type = "Submit">Predict Result</button>
+            <button type = "Reset">Reset</button>
+            
+        </form>
+    </body>
+</html>
