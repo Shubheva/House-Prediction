@@ -52,20 +52,20 @@ Also, before executing the files please make sure to navigate to the respective 
 Command: cd House_Prediction
 
 ### Step 5: Steps to run the codes.
-python model.py
-Example output:
+python model.py  
+Example output:  
 Index(['Price', 'Size', 'Bedrooms', 'Bathrooms', 'Location'], dtype='object')
 Model trained successfully and saved as 'savedmodel.pkl'
-python app.py
-Example output: 
- * Serving Flask app 'app'
- * Debug mode: on
+python app.py  
+Example output:  
+* Serving Flask app 'app'
+* Debug mode: on
 WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on http://127.0.0.1:5000
+* Running on http://127.0.0.1:5000
 Press CTRL+C to quit
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 105-716-319
+* Restarting with stat
+* Debugger is active!
+* Debugger PIN: 105-716-319
 
 You will have to click the server address (http://127.0.0.1:5000; may be differnt in your case) for the final application.
 
